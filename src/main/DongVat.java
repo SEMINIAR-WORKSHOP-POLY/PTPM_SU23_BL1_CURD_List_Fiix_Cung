@@ -4,13 +4,11 @@
  */
 package main;
 
-import java.io.Serializable;
-
 /**
  *
  * @author hangnt
  */
-public class DongVat implements Serializable{
+public class DongVat {
 
     private String maDongVat;
     private String tenDongVat;
@@ -79,12 +77,4 @@ public class DongVat implements Serializable{
         this.namSinh = namSinh;
     }
 
-    private Integer tinhTuoi(Integer namSinh) {
-        return 2023 - namSinh;
-    }
-
-    public Object[] toDataRow() {
-        return new Object[]{maDongVat, tenDongVat, canNang,
-            gioiTinh == true ? "Duc" : "Cai", khuVucSong, tinhTuoi(namSinh)};
-    }
 }

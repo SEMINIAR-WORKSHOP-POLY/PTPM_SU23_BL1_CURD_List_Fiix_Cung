@@ -4,12 +4,6 @@
  */
 package main;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,42 +56,6 @@ public class DongVatService {
             }
         }
         return "Update false";
-    }
-
-    public String ghiFile(String path) {
-        File file = new File(path);
-        try {
-            if (!file.exists()) {
-                file.createNewFile();
-            }
-            try (FileOutputStream fos = new FileOutputStream(file);
-                    ObjectOutputStream oos = new ObjectOutputStream(fos)) {
-                for (DongVat dongVat : listDongVat) {
-                    oos.writeObject(dongVat);
-                }
-            }
-            return "Ghi file thành công!";
-        } catch (IOException e) {
-            return "Ghi file thất bại";
-        }
-    }
-
-    public String docFile(String path) {
-        File file = new File(path);
-        try {
-            if (!file.exists()) {
-                return "Không tìm thấy file!";
-            }
-            try (FileInputStream fis = new FileInputStream(file);
-                    ObjectInputStream ois = new ObjectInputStream(fis)) {
-                while (fis.available() > 0) {
-                    listDongVat.add((DongVat) ois.readObject());
-                }
-            }
-            return "Đọc file thành công!";
-        } catch (IOException | ClassNotFoundException e) {
-            return "Đọc file thất bại";
-        }
     }
 
     private void setAllNamSinh() {
