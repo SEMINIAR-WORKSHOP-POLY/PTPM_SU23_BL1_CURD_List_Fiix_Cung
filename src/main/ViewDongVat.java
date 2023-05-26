@@ -35,7 +35,7 @@ public class ViewDongVat extends javax.swing.JFrame {
         txtKhuVucSong = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         cbbNamSinh = new javax.swing.JComboBox<>();
-        btnGhi = new javax.swing.JButton();
+        btnAdd = new javax.swing.JButton();
         btnSua = new javax.swing.JButton();
         btnXoa = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
@@ -44,7 +44,6 @@ public class ViewDongVat extends javax.swing.JFrame {
         btnClear = new javax.swing.JButton();
         btnThoat = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        btnMo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -136,7 +135,7 @@ public class ViewDongVat extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        btnGhi.setText("Ghi");
+        btnAdd.setText("Add");
 
         btnSua.setText("Sửa");
 
@@ -165,18 +164,14 @@ public class ViewDongVat extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jLabel4.setText("QUẢN LÝ ĐỘNG VẬT");
 
-        btnMo.setText("Mở");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 20, Short.MAX_VALUE)
-                .addComponent(btnGhi)
-                .addGap(18, 18, 18)
-                .addComponent(btnMo)
-                .addGap(15, 15, 15)
+                .addGap(0, 86, Short.MAX_VALUE)
+                .addComponent(btnAdd)
+                .addGap(42, 42, 42)
                 .addComponent(btnSua)
                 .addGap(18, 18, 18)
                 .addComponent(btnXoa)
@@ -196,7 +191,7 @@ public class ViewDongVat extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(249, 249, 249)
                         .addComponent(jLabel4)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -207,12 +202,11 @@ public class ViewDongVat extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnGhi)
+                    .addComponent(btnAdd)
                     .addComponent(btnSua)
                     .addComponent(btnXoa)
                     .addComponent(btnThoat)
-                    .addComponent(btnClear)
-                    .addComponent(btnMo))
+                    .addComponent(btnClear))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -258,9 +252,8 @@ public class ViewDongVat extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnClear;
-    private javax.swing.JButton btnGhi;
-    private javax.swing.JButton btnMo;
     private javax.swing.JButton btnSua;
     private javax.swing.JButton btnThoat;
     private javax.swing.JButton btnXoa;
