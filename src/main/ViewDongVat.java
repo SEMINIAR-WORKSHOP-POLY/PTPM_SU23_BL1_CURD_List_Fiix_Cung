@@ -146,13 +146,13 @@ public class ViewDongVat extends javax.swing.JFrame {
 
         tbHienThi.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Mã ĐV", "Tên", "Cân nặng", "Giới tính", "Khu vực sống", "Tuổi"
+                "Mã ĐV", "Tên", "Cân nặng", "Giới tính", "Khu vực sống"
             }
         ));
         jScrollPane2.setViewportView(tbHienThi);
